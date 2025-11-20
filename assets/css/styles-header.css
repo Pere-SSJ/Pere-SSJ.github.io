@@ -19,14 +19,6 @@ ul {
   list-style: none;
 }
 
-/**
- *                        
- *      _ __   __ ___   __
- *     | '_ \ / _` \ \ / /
- *     | | | | (_| |\ V / 
- *     |_| |_|\__,_| \_/  
- *                        
- */
 .header-main {
   background-color: #003049;
   color: white;
@@ -64,18 +56,38 @@ ul {
 .nav-links a {
   font-size: 1.1rem;
   font-weight: bold;
-  padding-right: 10px;
+  padding: 5px 0;
+  margin: 0 10px;
+  position: relative;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-ia:hover {
-  color: #d4c8c8;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FCBF49;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #FCBF49;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a.active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: #FCBF49;
+}
+
+.nav-links a.active::after {
+  width: 100%;
 }
 
 .nav-ia {
