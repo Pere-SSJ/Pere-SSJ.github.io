@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FCBF49;
+  padding-bottom: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/**
+ *                        
+ *      _ __   __ ___   __
+ *     | '_ \ / _` \ \ / /
+ *     | | | | (_| |\ V / 
+ *     |_| |_|\__,_| \_/  
+ *                        
+ */
+.header-main {
+  background-color: #003049;
+  color: white;
+  width: 100%;
+  min-height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 70px;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.nav-links li {
+  padding: 0;
+  width: auto;
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.nav-links a:hover,
+.nav-ia:hover {
+  color: #d4c8c8;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-ia {
+  font-weight: bold;
+}
