@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>peregrau.tech</title>
+  <title>Pere Grau</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/styles-header.css">
   <link rel="stylesheet" href="assets/css/styles-home.css">
@@ -11,9 +11,7 @@
 <body>
   <header class="header-main">
     <nav class="nav-main">
-      
       <a href="index.html" class="nav-logo">Pere Grau Manent</a>
-
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
@@ -23,38 +21,39 @@
   </header>
 
   <main class="main-content">
-    <figure class="home-slogan">
-      <img src="assets\images\home\home-slogan.png" alt="Slogan plane image" />
+    <figure class="introduction">
+      <h1 class="title">Hola, soy Pere</h1>
+      <p class="typing-text"></p>
     </figure>
 
     <div class="start-button-container">
-      <button class="start-button">VER PROYECTOS</button>
+      <a href="proyectos.html" class="start-button">VER PROYECTOS</a>
     </div>
+
     <div class="home-features-container">
       <section class="features-grid">
         
         <div class="feature-card">
-          <h3>Plan</h3>
-          <img src="assets\images\home\home-plan.png" alt="Calendar icon" class="feature-icon">
+          <h3>Arquitectura</h3>
+          <img src="assets\images\home\home-cpu.png" alt="Cpu icon" class="feature-icon">
         </div>
 
         <div class="feature-card">
-          <h3>Forecast</h3>
-          <img src="assets\images\home\home-forecast.png" alt="Weather icon" class="feature-icon">
+          <h3>Desarrollo</h3>
+          <img src="assets\images\home\home-dev.png" alt="Develop icon" class="feature-icon">
         </div>
 
         <div class="feature-card">
-          <h3>Discover</h3>
-          <img src="assets\images\home\home-discover.png" alt="Compass icon" class="feature-icon">
+          <h3>Diseño</h3>
+          <img src="assets\images\home\home-design.png" alt="Design icon" class="feature-icon">
         </div>
 
       </section>
-
-      <figure class="monuments-banner">
-          <img src="assets\images\home\home-banner.png" alt="Monuments banner">
-      </figure>
     </div>
-
   </main>
+
+  <script>
+    document.querySelector(".typing-text").textContent = "Estudiante de ingeniería informática";
+  </script>
 </body>
 </html>
